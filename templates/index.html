@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block content %}
+<section>
+    <h1>Welcome to my blog</h1>
+    <p>Trending articles all day long!</p>
+
+    <ul>
+        {% for post in posts %}
+        <li><a href="{% url 'post_detail' post.id %}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock content %}

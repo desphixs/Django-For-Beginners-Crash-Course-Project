@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome, {{name|default:"No name"|upper}}!</h1>
+    <h4>Age: {{ user_age|add:5 }}</h4>
+    <hr>
+    <h2>Languages I Know</h2>
+    <ul>
+       {% for language in languages %}
+            <li>{{language}}</li>
+       {% endfor %}
+    </ul>
+    <hr>
+    {% if user_age > 18 %} 
+        <p>You're an adult</p> 
+    {% else %} 
+        <p>You're a minor</p> 
+    {% endif %}
+</body>
+</html>
+
