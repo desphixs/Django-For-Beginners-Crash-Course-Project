@@ -27,7 +27,7 @@ SECRET_KEY = '9054379836756734657368534563458'
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TOKEN_ORIGINS = ["https://django-beginner-project-production.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["https://django-beginner-project-production.up.railway.app"]
 
 # Application definition
 
